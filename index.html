@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesquisador de Papuses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+
+
+  <body class="bg-dark text-white">
+    <nav class="navbar bg-dark">
+         <div> <!-- Retirei a class container pois ela colocar uma margin no elemento, como eu não queria, eu retirei -->
+          <a class="navbar-brand" href="#">
+            <img src="img/logo_dnc.png" alt="DNC" width="100">
+          </a>
+        </div>
+      </nav>
+
+    <h1 class="text-center"> Pesquisador de Países </h1>
+
+    <!-- Botão -->
+    <div class="container input-group mb-3">
+        <input type="text" id="inputPais" class="form-control" placeholder="Informe o País (em inglês)" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="Procurar()" class="btn btn-outline-secondary bg-primary text-white fw-bold" type="button" id="button-addon2">Pesquisar</button>
+      </div>
+
+      <div id="card" class="container text-center card text-dark p-3" style="width: 18rem;">
+        <img id="bandeiraCard" src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" id="nomePaisCard">Nome País</h5>
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Capital</strong> <p id="capital">---</p></li>
+          <li class="list-group-item"><strong>Continente</strong> <p id="continente">---</p></li>
+          <li class="list-group-item"><strong>População</strong> <p id="populacao">---</p></li>
+        </ul>
+
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
